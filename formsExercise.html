@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Customer Experience Survey</h1>
-    <form>
+    <form> 
+        <!-- Select ELement -->
     <label for="storeNumber">Store Number</label>
     <select id="storeNumber" required>
         <option hidden>Choose Store Number</option>
@@ -15,28 +16,33 @@
         <option>2421</option>
         <option>5357</option>
     </select>
-    <br>
-    <fieldset>
-        <legend>When you visited</legend>
-        <label for="date">Date Visited
-            <input type="date" name="datmaxmin" id="date" max="2021-12-31" min="2021-01-01" required>
+        <br>
+        <!-- Fieldset Element -->
+        <fieldset>
+            <legend>When you visited</legend>
+            <!-- Date Input -->
+            <label for="date">Date Visited
+                <input type="date" name="datmaxmin" id="date" max="2021-12-31" min="2021-01-01" required>
         </label>
+        <!-- Time Input  -->
         <label for="time">Time
             <input type="time" id="time" required>
         </label>
     </fieldset>
+    <!-- Text input  -->
     <label for="firstName">First Name</label>
     <input type="text" placeholder="John" id="firstName" required>
 
     <label for="lastName">Last Name</label>
     <input type="text" placeholder="Doe" id="lastName" required>
 <br>
+<!-- Email input  -->
     <label for="userEmail">User Email</label>
     <input type="email" placeholder="Your Email" id="userEmail" required>
 <br>
-
+<!-- Radio Input  -->
 <label for="Male">Male</label>
-<input type="radio" name="radioLink" id="male" required>
+<input type="radio" name="radioLink" id="Male" required>
 
 <label for="female">Female</label>
 <input type="radio" checked name="radioLink" id="female" required>
@@ -44,29 +50,31 @@
 <label for="other">Other</label>
 <input type="radio" name="radioLink" id="other" required>
 <br>
-
+<!-- Textarea Input -->
 <label for="experience">Tell us about your experience</label>
 <br>
 <textarea id="experience" cols="20" rows="0" required></textarea>
 <br>
-
+<!-- Number Input  -->
 <Label for="quantity">
     Times visited in the last month
-    <input type="number" name="quantity" id="quantity" min="1" max="30" required>
+    <input type="number" id="quantity" min="1" max="30" required>
 </Label>
 <br>
+<!-- Checkbox Input  -->
 <label for="checkbox">Please check the box if you be willing to be contacted about your experience</label>
 <input type="checkbox" id="checkbox" required>
 <br>
-
-<label for="password">
-<input type="password" name="" id="password" maxlength="10" minlength="5" required>
+<!-- Password Input  -->
+<label for="password"> Password
+<input type="password" id="password" pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length">
 </label>
 
 <br>
+<!-- Rest and Submit Input  -->
+<!-- Resets all fields inside of form ( AKA Form Tags) -->
 <input type="reset">
 <input type="submit">
-
 
 </form>
 </body>
